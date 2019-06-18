@@ -1,0 +1,11 @@
+<!-- Markdown Navigation -->
+
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="hyper-protect-dbaas-for-mongodb" audience="service" arm="3917562" href="/docs/services/hyper-protect-dbaas-for-mongodb/index.html" path="services/hyper-protect-dbaas-for-mongodb"}
+IBM Cloud Hyper Protect DBaaS for MongoDB
+
+    {: .navgroup id="learn"}
+    index.md
+    {: .navgroup-end}
