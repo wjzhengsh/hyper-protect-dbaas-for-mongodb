@@ -13,5 +13,5 @@ subcollection: hyper-protect-dbaas-for-mongodb
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 
-# Getting started with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}
+# Getting started
 {: #gettingstarted}
