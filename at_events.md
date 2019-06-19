@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-06-19"
 
 keywords: Activity tracker events
 
@@ -25,7 +25,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 Use the {{site.data.keyword.cloudaccesstrailfull}} service to track how users and applications interact with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}.
 {: shortdesc}
 
-The {{site.data.keyword.cloudaccesstrailfull_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. For more information, see the [{{site.data.keyword.cloudaccesstrailshort}} documentation](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started).
+The {{site.data.keyword.cloudaccesstrailfull_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. For how to provision the {{site.data.keyword.cloudaccesstrailshort}} service, see the [{{site.data.keyword.cloudaccesstrailshort}} documentation](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started) for more information. As the {{site.data.keyword.ihsdbaas_mongodb_full}} service is currently available in the Dallas data center, make sure that you select **us-south** as the region to capture logs.
 
 ## List of events
 {: #list-activity-tracker-events}
