@@ -41,7 +41,7 @@ IBM Cloud Hyper Protect DBaaS for MongoDB
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [DBaaS 管理程式 API 指令](https://test.cloud.ibm.com/apidocs/hyperp-dbaas)
+    [DBaaS 管理程式 API 指令](https://cloud.ibm.com/apidocs/hyperp-dbaas)
     dbaas_cli.md
     at_events.md
     supported_version.md
