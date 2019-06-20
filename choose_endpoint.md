@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-20"
 
 keywords: service endpoint, ibmcloud regions
 
@@ -26,25 +26,25 @@ To find a service endpoint near your geographical location, use the `ibmcloud re
 <pre><code class="hljs">~$ ibmcloud regions
 Listing regions...
 
-Name       Geolocation      Customer   Deployment   Type
-au-syd     Sydney           IBM        Production   public
-jp-tok     AP North
-eu-de      Germany          IBM        Production   public
-eu-gb      United Kingdom   IBM        Production   public
-us-east    US East          IBM        Production   public
-us-south   US South         IBM        Production   public
+Name       Display name
+au-syd     Sydney
+jp-tok     Tokyo
+eu-de      Frankfurt
+eu-gb      London
+us-south   Dallas
+us-east    Washington DC
 
 </code></pre>
 
-Currently, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} is supported only on the **us-south** region.
+Currently, {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} is supported only in the **us-south** region.
 {: note}
 
 To log in to an {{site.data.keyword.cloud_notm}} service endpoint, follow these steps:
 
 1. Enter the `ibmcloud login` command, indicating that you are using Single Sign-On (SSO) and specifying the URL of the endpoint you want to log in to, as shown in this example:
 
-   ```javascript
-   ibmcloud login --sso -a https://api.cloud.ibm.com
+   ```
+   ibmcloud login --sso -a https://cloud.ibm.com
    ```
    {:codeblock}
 
