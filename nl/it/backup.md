@@ -16,13 +16,13 @@ subcollection: hyper-protect-dbaas-for-mongodb
 {:tip: .tip}
 
 
-# Backup e ripristino dei tuoi database tramite {{site.data.keyword.cos_full_notm}} 
+# Backup e ripristino dei tuoi database tramite {{site.data.keyword.cos_full_notm}}
 {: #backup_mongodb_databases}
 
 Il servizio {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}} attiva automaticamente un backup del tuo intero database ogni 24 ore. Questi backup crittografati sono disponibili per gli ultimi 7 giorni e in modo ridondante sull'archiviazione locale in tutte le zone di disponibilità della regione supportata.
 {: shortdesc}
 
-Se vuoi aumentare le tue funzionalità di ripristino di emergenza e backup dei dati al di fuori della regione supportata, puoi utilizzare il servizio [{{site.data.keyword.cos_full_notm}}](https://cloud.ibm.com/catalog/services/cloud-object-storage){: external} per archiviare i tuoi dati in una regione diversa facendo riferimento alla seguente procedura. 
+Se vuoi aumentare le tue funzionalità di ripristino di emergenza e backup dei dati al di fuori della regione supportata, puoi utilizzare il servizio [{{site.data.keyword.cos_full_notm}}](https://cloud.ibm.com/catalog/services/cloud-object-storage){: external} per archiviare i tuoi dati in una regione diversa facendo riferimento alla seguente procedura.
 
 ## Prima di cominciare
 {: #backup_mongodb_before_begin}
@@ -67,7 +67,7 @@ Devi creare l'istanza in una regione diversa rispetto a quella in cui al momento
 2. [Crea un bucket](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-region) in una regione diversa.
 3. [Crea le credenziali del servizio](/docs/services/cloud-object-storage?topic=cloud-object-storage-service-credentials) e salva `access_key_id` e `secret_access_key` per un utilizzo successivo.
 4. Installa un client S3.
-5. Utilizza il client S3 e le chiavi di accesso per la connessione all'endpoint {{site.data.keyword.cos_short}} cloud del bucket che hai creato in precedenza. 
+5. Utilizza il client S3 e le chiavi di accesso per la connessione all'endpoint {{site.data.keyword.cos_short}} cloud del bucket che hai creato in precedenza.
 6. Utilizza il client S3 per [caricare il file di backup di {{site.data.keyword.mongodb}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload) che hai creato nel [Passo 1](#step1_create_dump_file_backup_mongodb) nel bucket.
 
 Per ulteriori informazioni, puoi fare riferimento alla [documentazione {{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started).

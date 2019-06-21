@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-20"
 
 keywords: service endpoint, ibmcloud regions
 
@@ -26,13 +26,13 @@ Para localizar um terminal em serviço próximo à sua localização geográfica
 <pre><code class="hljs">~$ ibmcloud regions
 Listing regions...
 
-Name       Geolocation      Customer   Deployment   Type
-au-syd     Sydney           IBM        Production   public
-jp-tok     AP North
-eu-de      Germany          IBM        Production   public
-eu-gb      United Kingdom   IBM        Production   public
-us-east    US East          IBM        Production   public
-us-south   US South         IBM        Production   public
+Name       Display name
+au-syd     Sydney
+jp-tok     Tokyo
+eu-de      Frankfurt
+eu-gb      London
+us-south   Dallas
+us-east    Washington DC
 
 </code></pre>
 
@@ -43,8 +43,8 @@ Para efetuar login em um terminal em serviço do {{site.data.keyword.cloud_notm}
 
 1. Insira o comando `ibmcloud login`, indicando que você está usando Conexão única (SSO) e especificando a URL do terminal no qual você deseja efetuar login, conforme mostrado neste exemplo:
 
-   ```javascript
-   ibmcloud login --sso -a https://api.cloud.ibm.com
+   ```
+   ibmcloud login --sso -a https://cloud.ibm.com
    ```
    {:codeblock}
 

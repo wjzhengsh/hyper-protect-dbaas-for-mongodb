@@ -100,7 +100,7 @@ Für eine erweiterte Sicherheit wird empfohlen, das **Kennwort des Datenbankadmi
 ## Serviceinstanz löschen
 {: #dbaas_webui_delete_service}
 
-1. Rufen Sie die {{site.data.keyword.cloud_notm}}-Ressourcenliste durch Klicken auf **Navigationsmenüs > Ressourcenliste** auf. 
+1. Rufen Sie die {{site.data.keyword.cloud_notm}}-Ressourcenliste durch Klicken auf **Navigationsmenüs > Ressourcenliste** auf.
 2. Öffnen Sie den Twister **Service**, um die Serviceinstanzen anzuzeigen.
 3. Wählen Sie die Serviceinstanz aus, die Sie löschen möchten.
 4. Klicken Sie rechts auf die drei Punkte.

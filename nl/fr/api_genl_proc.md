@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-21"
 
 keywords: DBaaS Manager APIs, DBaaS Manager, API request
 
@@ -52,11 +52,11 @@ Pour des informations plus détaillées (méthodes et paramètres), vous pouvez 
 
 Pour créer une instance de service, émettez un appel API direct, par exemple :
 
-```javascript
+```
 curl -X POST \
 "https://<ip>:<port>/api/v1/services" \
--d '{"name": "Service_Name", "resource_group": "default", "plan": "mongodb-free", "admin_name": "admin", "password": "passw0rd_for_adm"}'
--H "x-auth-token: {access_token}" \
+-d '{"catalog": "hyperp-dbaas-mongodb", "name": "Service_Name", "resource_group": "default", "plan": "mongodb-small", "admin_name": "admin", "password": "passWORD4User19"}'
+-H "x-auth-token: <access_token>" \
 -H "accept: application/json" \
 -H "accept-license-agreement: yes"
 ```
@@ -64,7 +64,7 @@ curl -X POST \
 
 Où :
 <dl>
-<dt> &lt;<em>accessToken</em>&gt; </dt>
+<dt> &lt;<em>access_token</em>&gt; </dt>
 <dd>Est le jeton d'accès précédemment obtenu. Voir [Configuration de l'authentification pour utiliser des API DBaaS Manager](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-api-auth). (**Remarque :** si le jeton d'accès a expiré, revenez à ces instructions et demandez un nouveau jeton.) </dd>
 <dt> &lt;<em>ip</em>&gt; </dt>
 <dd>Est le nom d'hôte d'un gestionnaire DBaaS Manager. Les noms d'hôte valides sont répertoriés dans le tableau ci-dessus.

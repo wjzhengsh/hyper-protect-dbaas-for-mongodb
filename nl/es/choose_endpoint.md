@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-20"
 
 keywords: service endpoint, ibmcloud regions
 
@@ -26,13 +26,13 @@ Para encontrar un punto final de servicio cerca de su ubicación geográfica, ut
 <pre><code class="hljs">~$ ibmcloud regions
 Listing regions...
 
-Name       Geolocation      Customer   Deployment   Type
-au-syd     Sydney           IBM        Production   public
-jp-tok     AP North
-eu-de      Germany          IBM        Production   public
-eu-gb      United Kingdom   IBM        Production   public
-us-east    US East          IBM        Production   public
-us-south   US South         IBM        Production   public
+Name       Display name
+au-syd     Sydney
+jp-tok     Tokyo
+eu-de      Frankfurt
+eu-gb      London
+us-south   Dallas
+us-east    Washington DC
 
 </code></pre>
 
@@ -43,8 +43,8 @@ Para iniciar sesión en un punto final de servicio de {{site.data.keyword.cloud_
 
 1. Especifique el mandato `ibmcloud login`, indicando que está utilizando el inicio de sesión único (SSO) y especificando el URL del punto final en el que desea iniciar sesión, como se muestra en este ejemplo:
 
-   ```javascript
-   ibmcloud login --sso -a https://api.cloud.ibm.com
+   ```
+   ibmcloud login --sso -a https://cloud.ibm.com
    ```
    {:codeblock}
 

@@ -43,5 +43,4 @@ En la tabla siguiente se detallan las acciones que se correlacionan con los role
 |Administrador           |Realizar todas las acciones de plataforma basadas en el recurso al que se está asignando este rol, incluida la asignación de políticas de acceso a otros usuarios|<ul><li>Eliminar un clúster</li><li>Crear un clúster</li><li>Actualizar políticas de acceso de usuarios</li><li>Todas las acciones que puede realizar un visor, un editor, y un operador</li></ul>|
 {: caption="Tabla 1. Roles de usuario y acciones de IAM"}
 
-
 Para obtener información sobre la asignación de roles de usuario en la interfaz de usuario, consulte [Gestión del acceso a los recursos](/docs/iam?topic=iam-iammanidaccser#iammanidaccser).

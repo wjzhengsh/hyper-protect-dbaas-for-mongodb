@@ -43,5 +43,4 @@ subcollection: hyper-protect-dbaas-for-mongodb
 |관리자                  |다른 사용자에게 액세스 정책 지정을 포함해, 이 역할이 지정되는 리소스를 기반으로 한 모든 플랫폼 조치를 수행할 수 있음|<ul><li>클러스터 제거</li><li>클러스터 작성</li><li>사용자 액세스 정책 업데이트</li><li>뷰어, 편집자 및 운영자가 수행할 수 있는 모든 조치</li></ul>|
 {: caption="표 1. IAM 사용자 역할 및 조치"}
 
-
 UI에서 사용자 역할 지정에 대한 정보는 [리소스에 대한 액세스 관리](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)를 참조하십시오.

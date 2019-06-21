@@ -19,7 +19,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 # {{site.data.keyword.cos_full_notm}} を使用したデータベースのバックアップとリストア
 {: #backup_mongodb_databases}
 
-{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}} サービスは、24 時間ごとに 1 回、データベース全体のバックアップを自動的にトリガーします。 これらの暗号化されたバックアップの直近 7 日分が、サポート対象領域のすべてのアベイラビリティー・ゾーンのローカル・ストレージ上に冗長的に保持されます。
+{{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}} サービスは、24 時間ごとに 1 回、データベース全体のバックアップを自動的にトリガーします。 これらの暗号化されたバックアップの直近 7 日分が、サポート対象地域のすべてのアベイラビリティー・ゾーンのローカル・ストレージ上に冗長的に保持されます。
 {: shortdesc}
 
 災害復旧能力を向上させるためにサポート対象外の地域にデータをバックアップするには、以下の手順を参照することで、[{{site.data.keyword.cos_full_notm}} サービス](https://cloud.ibm.com/catalog/services/cloud-object-storage){: external}を使用して別の地域にデータを保管できます。

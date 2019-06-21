@@ -55,9 +55,9 @@ Dove i parametri hanno le seguenti definizioni:
     <td>
       <p>La password utente dell'amministratore del database che deve essere creato. Devi creare una password sicura con i seguenti attributi:
         <ul>
-          <li>una lunghezza di minimo **15 caratteri** </li>
-          <li>almeno **un carattere maiuscolo** </li>
-          <li>almeno **un carattere minuscolo** </li>
+          <li>una lunghezza di minimo **15 caratteri**</li>
+          <li>almeno **un carattere maiuscolo**</li>
+          <li>almeno **un carattere minuscolo**</li>
           <li>almeno **un numero**</li>
           <li>non deve contenere il nome utente</li>
         </ul>

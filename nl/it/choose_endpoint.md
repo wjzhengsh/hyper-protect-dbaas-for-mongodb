@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-20"
 
 keywords: service endpoint, ibmcloud regions
 
@@ -26,13 +26,13 @@ Per trovare un endpoint del servizio vicino alla tua ubicazione geografica, util
 <pre><code class="hljs">~$ ibmcloud regions
 Listing regions...
 
-Name       Geolocation      Customer   Deployment   Type
-au-syd     Sydney           IBM        Production   public
-jp-tok     AP North
-eu-de      Germany          IBM        Production   public
-eu-gb      United Kingdom   IBM        Production   public
-us-east    US East          IBM        Production   public
-us-south   US South         IBM        Production   public
+Name       Display name
+au-syd     Sydney
+jp-tok     Tokyo
+eu-de      Frankfurt
+eu-gb      London
+us-south   Dallas
+us-east    Washington DC
 
 </code></pre>
 
@@ -43,8 +43,8 @@ Per accedere a un endpoint del servizio {{site.data.keyword.cloud_notm}}, attien
 
 1. Immetti il comando `ibmcloud login`, che indica che stai utilizzando SSO (Single Sign-On) e specifica l'URL dell'endpoint a cui vuoi accedere, come mostrato in questo esempio:
 
-   ```javascript
-   ibmcloud login --sso -a https://api.cloud.ibm.com
+   ```
+   ibmcloud login --sso -a https://cloud.ibm.com
    ```
    {:codeblock}
 

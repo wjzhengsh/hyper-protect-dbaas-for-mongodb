@@ -66,7 +66,7 @@ mongodump --host "<replica_set_name>/<hostname1>:<port1>,<hostname2>:<port2>,<ho
 - [DBaaS Manger API](https://{DomainName}/apidocs/hyperp-dbaas#create-an-ibm-cloud-service-instance-of-hyperprote){: external}
 - [{{site.data.keyword.cloud_notm}} CLI の CLI プラグイン](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-dbaas_cli_create_service)
 
-新しいサービス・インスタンスを作成するときには、クラスター名、管理者名、パスワードを設定する必要があります。元のインスタンスと同じにする必要はありません。 マイグレーションには影響ありません。 マイグレーションの完了後に、データベースは新しい管理者データベース/認証データベースに割り当てられます。
+新しいサービス・インスタンスを作成するときには、クラスター名、管理者名、パスワードを設定する必要があります。 元のインスタンスと同じにする必要はありません。 マイグレーションには影響ありません。 マイグレーションの完了後に、データベースは新しい管理者データベース/認証データベースに割り当てられます。
 
 ## 手順 3: ダンプ・ファイルのデータを新しいサービス・インスタンスに復元する
 {: #step3_restore_data}

@@ -49,7 +49,7 @@ Nel dashboard {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_f
 1. Seleziona l'istanza del database.
 2. Seleziona la data di inizio (**Start date**) e la data di fine (**End date**) per filtrare i log in base al tempo.
 3. Seleziona i log che vuoi scaricare facendo clic sulla **casella di spunta** prima del nome del log.
-4. Fai clic sul pulsante **Download**. 
+4. Fai clic sul pulsante **Download**.
 
 ## Controllo dello stato dell'istanza
 {: #webui-check-instance-status}

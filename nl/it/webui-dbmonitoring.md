@@ -26,7 +26,7 @@ Dopo aver abilitato il monitoraggio del database, puoi visualizzare le metriche 
 {: #webui-database-monitoring-byb}
 
 1.  Assicurati di avere accesso a un'organizzazione e a uno spazio Cloud Foundry in Dallas (us-south).
-    Per informazioni su come ottenere tale accesso, vedi [Gestione dell'accesso a Cloud Foundry](https://cloud.ibm.com/docs/iam?topic=iam-mngcf#mngcf){: external}. 
+    Per informazioni su come ottenere tale accesso, vedi [Gestione dell'accesso a Cloud Foundry](https://cloud.ibm.com/docs/iam?topic=iam-mngcf#mngcf){: external}.
 
 2.  Assicurati che tutte le istanze del cluster di database siano in esecuzione.
 
@@ -49,6 +49,7 @@ Esistono due modi per visualizzare le metriche in Grafana:
 - Copia il link visualizzato ed apri una nuova scheda o finestra e incollalo nel browser.
 - Fai clic su **View in Grafana**.
 
-Per visualizzare le metriche in un nuovo dashboard in Grafana, seleziona l'icona Grafana in alto a sinistra e seleziona **Dashboards > New**. Potrebbe essere necessario un po' di tempo prima che i tuoi ID del cluster di database e ID istanza vengano visualizzati e potresti dover ricaricare il dashboard.
+Per visualizzare le metriche in un nuovo dashboard in Grafana, seleziona l'icona Grafana in alto a sinistra e seleziona **Dashboards > New**.
+Potrebbe essere necessario un po' di tempo prima che i tuoi ID del cluster di database e ID istanza vengano visualizzati e potresti dover ricaricare il dashboard.
 
-Per ulteriori informazioni sull'utilizzo di Grafana, vedi [Monitoraggio di {{site.data.keyword.cloud_notm}}](/docs/services/cloud-monitoring?topic=cloud-monitoring-getting-started). 
+Per ulteriori informazioni sull'utilizzo di Grafana, vedi [Monitoraggio di {{site.data.keyword.cloud_notm}}](/docs/services/cloud-monitoring?topic=cloud-monitoring-getting-started).

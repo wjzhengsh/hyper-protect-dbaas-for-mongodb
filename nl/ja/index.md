@@ -18,8 +18,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 
 {{site.data.keyword.cloud}}
 {{site.data.keyword.ihsdbaas_mongodb_full}} は、オンデマンドで MongoDB データベースを提供する
-{{site.data.keyword.cloud_notm}} サービスです。
-柔軟かつスケーラブルなプラットフォームで、最適なデータベースを迅速かつ簡単にプロビジョンして管理することができます。
+{{site.data.keyword.cloud_notm}} サービスです。 柔軟かつスケーラブルなプラットフォームで、最適なデータベースを迅速かつ簡単にプロビジョンして管理することができます。
 {: shortdesc}
 
 この {{site.data.keyword.cloud_notm}} オファリングでは、MongoDB データベース・クラスターが提供されます。 各データベース・クラスターは、1 つのプライマリー・データベース・インスタンスと、プライマリー・データベースをバックアップする 2 つのデータベース・インスタンス・レプリカから構成されます。
@@ -33,7 +32,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 {{site.data.keyword.IBM_notm}} は可用性が高くセキュアな環境でデータベースをホストします。
 <ul>
 <li>基礎のテクノロジーにより、{{site.data.keyword.IBM_notm}} や第三者によるデータ・アクセスを防止しています。
-<p>{{site.data.keyword.IBM_notm}} Secure Service Container テクノロジーにより、改ざん防止環境でシステムを保護しています。システムへのアクセスは制限されており、明確に定義された RESTful API を使用しないとアクセスできません。</p></li>
+<p>{{site.data.keyword.IBM_notm}} Secure Service Container テクノロジーにより、改ざん防止環境でシステムを保護しています。 システムへのアクセスは制限されており、明確に定義された RESTful API を使用しないとアクセスできません。</p></li>
 <li>データは保存中も転送中も暗号化されます。</li>
 <li>システムのハードウェア、システム構成、およびデータベースのセットアップにより、高可用性を実現しています。</li>
 </ul>
@@ -108,7 +107,7 @@ MongoDB データベースを作成したら、mongo シェル、任意の Mongo
   <dt> &lt;<em>Username</em>&gt; </dt>
     <dd> サービス作成画面で指定されたデータベース管理者のユーザー名 </dd>
   <dt> &lt;<em>Password</em>&gt; </dt>
-    <dd> サービス作成画面で指定されたデータベース管理者のパスワード</dd>
+    <dd> サービス作成画面で指定されたデータベース管理者のパスワード </dd>
   <dt> &lt;<em>CAFile</em>&gt; </dt>
     <dd> CA ファイル cert.pem </dd>
 </dl>

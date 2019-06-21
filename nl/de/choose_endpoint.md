@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-20"
 
 keywords: service endpoint, ibmcloud regions
 
@@ -26,13 +26,13 @@ Um einen Serviceendpunkt in der Nähe Ihres Standorts zu finden, verwenden Sie d
 <pre><code class="hljs">~$ ibmcloud regions
 Regionen werden aufgelistet ...
 
-Name    Geoortung      Kunde     Bereitstellung   Typ
-au-syd     Sydney           IBM        Produktion   öffentlich
-jp-tok     AP (Norden)
-eu-de      Deutschland      IBM        Produktion   öffentlich
-eu-gb      Großbritannien   IBM        Produktion   öffentlich
-us-east    USA (Osten)      IBM        Produktion   öffentlich
-us-south   USA (Süden)      IBM        Produktion   öffentlich
+Name       Display name
+au-syd     Sydney
+jp-tok     Tokyo
+eu-de      Frankfurt
+eu-gb      London
+us-south   Dallas
+us-east    Washington DC
 
 </code></pre>
 
@@ -43,8 +43,8 @@ Führen Sie die folgenden Schritte aus, um sich an einem {{site.data.keyword.clo
 
 1. Geben Sie den Befehl `ibmcloud login` ein, der angibt, dass Sie Single Sign-On (SSO) verwenden, und gleichzeitig die URL des Endpunkts anzeigt, an dem Sie sich anmelden möchten, wie in diesem Beispiel gezeigt:
 
-   ```javascript
-   ibmcloud login --sso -a https://api.cloud.ibm.com
+   ```
+   ibmcloud login --sso -a https://cloud.ibm.com
    ```
    {:codeblock}
 

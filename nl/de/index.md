@@ -101,7 +101,7 @@ Sie können den Mongo-Shellbefehl ausführen, der im {{site.data.keyword.ihsdbaa
 1. Klicken Sie auf das Symbol neben dem Befehl, um ihn in die Zwischenablage zu kopieren.
 2. Wenn die sichere Datenverbindung mit einem SSL-Fehler fehlschlägt, geben Sie die erhaltene CA-Datei an, um das Serverzertifikat zu überprüfen. Fügen Sie den Parameter `--sslCAFile` hinzu, um die CA-Datei anzugeben.
 
-Beispiel: 
+Beispiel:
 
 <pre><code class="hljs"># mongo 'mongodb:/&sol;&lt;<em>hostname_1</em>&gt;&colon;&lt;<em>portnummer_1</em>&gt;,\
 &lt;<em>hostname_2</em>&gt;&colon;&lt;<em>portnummer_2</em>&gt;,\

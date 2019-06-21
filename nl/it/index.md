@@ -98,7 +98,7 @@ Puoi eseguire il comando mongo shell fornito nel dashboard {{site.data.keyword.i
 1. Fai clic sull'icona accanto al comando per copiarlo negli appunti.
 2. Se la connessione dati sicura ha esito negativo con un errore SSL, specifica il file CA ottenuto per convalidare il certificato del server. Aggiungi il parametro `--sslCAFile` per indicare il file CA.
 
-Vedi il seguente esempio: 
+Vedi il seguente esempio:
 
 <pre><code class="hljs"># mongo 'mongodb:/&sol;&lt;<em>Hostname_1</em>&gt;&colon;&lt;<em>PortNumber_1</em>&gt;,\
 &lt;<em>Hostname_2</em>&gt;&colon;&lt;<em>PortNumber_2</em>&gt;,\

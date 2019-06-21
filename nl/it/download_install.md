@@ -19,6 +19,6 @@ subcollection: hyper-protect-dbaas-for-mongodb
 # Scaricamento ed installazione della CLI {{site.data.keyword.cloud_notm}}
 {: #install-ibm-cli}
 
-Per scaricare ed installare la CLI {{site.data.keyword.cloud}}, vedi [Introduzione alla CLI {{site.data.keyword.cloud_notm}}](/docs/cli?topic=cloud-cli-getting-started). 
+Per scaricare ed installare la CLI {{site.data.keyword.cloud}}, vedi [Introduzione alla CLI {{site.data.keyword.cloud_notm}}](/docs/cli?topic=cloud-cli-getting-started).
 
 Dopo che l'installazione è stata completata, il comando `ibmcloud` è disponibile sulla tua console di sistema.

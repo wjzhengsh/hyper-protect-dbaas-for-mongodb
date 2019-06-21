@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-20"
 
 keywords: service endpoint, ibmcloud regions
 
@@ -25,13 +25,13 @@ subcollection: hyper-protect-dbaas-for-mongodb
 <pre><code class="hljs">~$ ibmcloud regions
 Listing regions...
 
-Name       Geolocation      Customer   Deployment   Type
-au-syd     Sydney           IBM        Production   public
-jp-tok     AP North
-eu-de      Germany          IBM        Production   public
-eu-gb      United Kingdom   IBM        Production   public
-us-east    US East          IBM        Production   public
-us-south   US South         IBM        Production   public
+Name       Display name
+au-syd     Sydney
+jp-tok     Tokyo
+eu-de      Frankfurt
+eu-gb      London
+us-south   Dallas
+us-east    Washington DC
 
 </code></pre>
 
@@ -42,8 +42,8 @@ us-south   US South         IBM        Production   public
 
 1. 輸入 `ibmcloud login` 指令，指出您將使用單一登入 (SSO)，並指定要登入的端點 URL，如下列範例中所示：
 
-   ```javascript
-   ibmcloud login --sso -a https://api.cloud.ibm.com
+   ```
+   ibmcloud login --sso -a https://cloud.ibm.com
    ```
    {:codeblock}
 

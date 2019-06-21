@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-21"
 
 keywords: DBaaS Manager APIs, DBaaS Manager, API request
 
@@ -52,11 +52,11 @@ subcollection: hyper-protect-dbaas-for-mongodb
 
 서비스 인스턴스를 작성하려면 다음과 같이 직접 API 호출을 실행하십시오.
 
-```javascript
+```
 curl -X POST \
 "https://<ip>:<port>/api/v1/services" \
--d '{"name": "Service_Name", "resource_group": "default", "plan": "mongodb-free", "admin_name": "admin", "password": "passw0rd_for_adm"}'
--H "x-auth-token: {access_token}" \
+-d '{"catalog": "hyperp-dbaas-mongodb", "name": "Service_Name", "resource_group": "default", "plan": "mongodb-small", "admin_name": "admin", "password": "passWORD4User19"}'
+-H "x-auth-token: <access_token>" \
 -H "accept: application/json" \
 -H "accept-license-agreement: yes"
 ```
@@ -64,7 +64,7 @@ curl -X POST \
 
 여기서:
 <dl>
-<dt> &lt;<em>accessToken</em>&gt; </dt>
+<dt> &lt;<em>access_token</em>&gt; </dt>
 <dd>이전에 가져온 액세스 토큰입니다. [DBaaS Manager API 사용을 위한 인증 설정](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-api-auth)을 참조하십시오. (**참고:** 액세스 토큰이 만료된 경우에는 해당 지시사항으로 돌아가서 새 토큰을 요청하십시오.) </dd>
 <dt> &lt;<em>ip</em>&gt; </dt>
 <dd>DBaaS Manager의 호스트 이름입니다. 유효한 호스트 이름은 위의 표에 나열되어 있습니다.

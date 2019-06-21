@@ -33,7 +33,7 @@ Für die Parameter gelten dabei die folgenden Definitionen:
 | ---------------- |  -------------------------------------------------------------- |
 | *MyDBaaSIns03*   |  Der Name der Serviceinstanz (durch einen Namen Ihrer Wahl ersetzen). |
 | *hyperp-dbaas-mongodb* | Der Katalogname von {{site.data.keyword.ihsdbaas_mongodb_full}}. |
-| *mongodb-small*  | Der Planname. Verfügbare Pläne sind: **mongodb-small**, **mongodb-medium** und **mongodb-large**. (**Hinweis:** Bei Plannamen muss die Groß-/Kleinschreibung beachtet werden.) |
+| *mongodb-small*  | Der Planname. Verfügbare Pläne sind: **mongodb-small**, **mongodb-medium** und **mongodb-large**.  (**Hinweis:** Bei Plannamen muss die Groß-/Kleinschreibung beachtet werden.) |
 | *us-south*            | Der Standort, an der sich die neue Datenbank befindet. (**Hinweis:** Derzeit unterstützt nur **us-south** {{site.data.keyword.ihsdbaas_mongodb_full}}.) |
 | *-p*               | Eine gültige JSON-Zeichenfolge, die die Parameter in der folgenden Tabelle enthalten muss. |
 

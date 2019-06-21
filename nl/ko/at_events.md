@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-06-19"
 
 keywords: Activity tracker events
 
@@ -25,7 +25,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 {{site.data.keyword.cloudaccesstrailfull}} 서비스를 사용하여 사용자와 애플리케이션이 {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}와 상호작용하는 방법을 추적할 수 있습니다.
 {: shortdesc}
 
-{{site.data.keyword.cloudaccesstrailfull_notm}} 서비스는 {{site.data.keyword.cloud_notm}}에서 서비스의 상태를 변경하는 사용자 시작 활동을 기록합니다. 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}} 문서](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started)를 참조하십시오.
+{{site.data.keyword.cloudaccesstrailfull_notm}} 서비스는 {{site.data.keyword.cloud_notm}}에서 서비스의 상태를 변경하는 사용자 시작 활동을 기록합니다. {{site.data.keyword.cloudaccesstrailshort}} 서비스를 프로비저닝하는 방법에 대한 자세한 정보는 [{{site.data.keyword.cloudaccesstrailshort}} 문서](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started)를 참조하십시오. {{site.data.keyword.ihsdbaas_mongodb_full}} 서비스는 현재 댈러스 데이터 센터에서 제공되므로, 로그를 캡처하려면 지역으로 **us-south**를 선택해야 합니다. 
 
 ## 이벤트 목록
 {: #list-activity-tracker-events}

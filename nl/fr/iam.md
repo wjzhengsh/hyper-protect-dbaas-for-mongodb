@@ -43,5 +43,4 @@ Le tableau suivant détaille les actions mappées sur les rôles de gestion de p
 |Administrateur           |Effectuer toutes les actions de plateforme en fonction de la ressource pour laquelle ce rôle est affecté, y compris l'affectation de règles d'accès à d'autres utilisateurs.|<ul><li>Retirer un cluster</li><li>Créer un cluster</li><li>Mise à jour des règles d'accès utilisateur</li><li>Toutes les actions qu'un afficheur, un éditeur et un opérateur peuvent effectuer</li></ul>|
 {: caption="Tableau 1. Actions et rôles utilisateur IAM"}
 
-
 Pour plus d'informations sur l'attribution de rôles d'utilisateur dans l'interface utilisateur, voir [Gestion de l'accès aux ressources](/docs/iam?topic=iam-iammanidaccser#iammanidaccser).

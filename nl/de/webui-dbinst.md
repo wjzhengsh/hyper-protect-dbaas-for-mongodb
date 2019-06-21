@@ -49,7 +49,7 @@ Wählen Sie im {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_
 1. Wählen Sie die Datenbankinstanz aus.
 2. Wählen Sie das **Startdatum** und das **Enddatum** aus, um die Protokolle anhand des Datums zu filtern.
 3. Wählen Sie die Protokolle aus, die heruntergeladen werden sollen, indem Sie auf das **Kontrollkästchen** vor dem Namen des jeweiligen Protokolls klicken.
-4. Klicken Sie auf die Schaltfläche für den **Download**. 
+4. Klicken Sie auf die Schaltfläche für den **Download**.
 
 ## Status der Instanz überprüfen
 {: #webui-check-instance-status}

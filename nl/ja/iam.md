@@ -43,5 +43,4 @@ subcollection: hyper-protect-dbaas-for-mongodb
 |管理者           |他のユーザーへのアクセス・ポリシーの割り当てなど、この役割が割り当てられているリソースに基づいてすべてのプラットフォーム・アクションを実行できます|<ul><li>クラスターの削除</li><li>クラスターの作成</li><li>ユーザー・アクセス・ポリシーの更新</li><li>ビューアー、エディター、オペレーターが実行できるすべてのアクション</li></ul>|
 {: caption="表 1. IAM ユーザーの役割とアクション"}
 
-
 UI でのユーザーの役割の割り当てについては、[リソースへのアクセスの管理](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)を参照してください。

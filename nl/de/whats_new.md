@@ -31,4 +31,4 @@ Neu zum 21. Juni 2019
 
 {{site.data.keyword.IBM_notm}} stellt Datenbanken in einer hoch verfügbaren und sicheren Umgebung per Hosting bereit.
 
-Weitere Informationen finden Sie in der [Einführung zu {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted). 
+Weitere Informationen finden Sie in der [Einführung zu {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-gettingstarted).

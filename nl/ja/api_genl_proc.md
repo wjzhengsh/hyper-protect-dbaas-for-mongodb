@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-21"
 
 keywords: DBaaS Manager APIs, DBaaS Manager, API request
 
@@ -52,11 +52,11 @@ subcollection: hyper-protect-dbaas-for-mongodb
 
 サービス・インスタンスを作成するために、以下のように直接の API 呼び出しを実行します。
 
-```javascript
+```
 curl -X POST \
 "https://<ip>:<port>/api/v1/services" \
--d '{"name": "Service_Name", "resource_group": "default", "plan": "mongodb-free", "admin_name": "admin", "password": "passw0rd_for_adm"}'
--H "x-auth-token: {access_token}" \
+-d '{"catalog": "hyperp-dbaas-mongodb", "name": "Service_Name", "resource_group": "default", "plan": "mongodb-small", "admin_name": "admin", "password": "passWORD4User19"}'
+-H "x-auth-token: <access_token>" \
 -H "accept: application/json" \
 -H "accept-license-agreement: yes"
 ```
@@ -64,7 +64,7 @@ curl -X POST \
 
 各パラメーターの説明は以下のとおりです。
 <dl>
-<dt> &lt;<em>accessToken</em>&gt; </dt>
+<dt> &lt;<em>access_token</em>&gt; </dt>
 <dd>事前に取得したアクセス・トークン。[DBaaS Manager API を使用するための認証のセットアップ](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-api-auth)を参照してください (**注:** アクセス・トークンの期限が切れている場合は、この手順に戻って新しいトークンを要求してください)。 </dd>
 <dt> &lt;<em>ip</em>&gt; </dt>
 <dd>DBaaS Manager のホスト名。 上記の表に有効なホスト名をリストしています。

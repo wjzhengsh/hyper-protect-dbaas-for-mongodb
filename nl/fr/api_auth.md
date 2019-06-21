@@ -21,7 +21,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 {: #api-auth}
 
 Pour l'authentification, vous avez besoin d'une clé d'API, d'un jeton d'accès et d'un ID utilisateur afin d'émettre des demandes d'API.
-Pour ce faire, procédez comme suit  :
+Pour ce faire, procédez comme suit :
 
 1. Générez une clé d'API :
 

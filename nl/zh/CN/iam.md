@@ -43,5 +43,4 @@ subcollection: hyper-protect-dbaas-for-mongodb
 |管理员|基于此角色分配用于的资源执行所有平台操作，包括为其他用户分配访问策略|<ul><li>除去集群</li><li>创建集群</li><li>更新用户访问策略</li><li>查看者、编辑者和操作员可以执行的所有操作</li></ul>|
 {: caption="表 1. IAM 用户角色和操作"}
 
-
 有关在 UI 中分配用户角色的信息，请参阅[管理对资源的访问权](/docs/iam?topic=iam-iammanidaccser#iammanidaccser)。

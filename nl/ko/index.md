@@ -104,9 +104,9 @@ MongoDB 데이터베이스를 작성한 후에는 mongo 쉘, 선호하는 MongoD
   <dt> &lt;<em>replicaSetName</em>&gt; </dt>
     <dd> {{site.data.keyword.ihsdbaas_mongodb_full}} 대시보드에서 지정된 리턴된 복제본 세트의 이름입니다. </dd>
   <dt> &lt;<em>Username</em>&gt; </dt>
-    <dd> 서비스 작성 화면에 지정된 데이터베이스 관리자의 사용자 이름입니다.</dd>
+    <dd> 서비스 작성 화면에 지정된 데이터베이스 관리자의 사용자 이름입니다. </dd>
   <dt> &lt;<em>Password</em>&gt; </dt>
-    <dd> 서비스 작성 화면에 지정된 데이터베이스 관리자의 비밀번호입니다.</dd>
+    <dd> 서비스 작성 화면에 지정된 데이터베이스 관리자의 비밀번호입니다. </dd>
   <dt> &lt;<em>CAFile</em>&gt; </dt>
     <dd> CA 파일 cert.pem입니다. </dd>
 </dl>

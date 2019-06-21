@@ -24,7 +24,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 {: #dbaas_webui_create_service}
 
 <ol>
-<li>Fai clic sulla voce di catalogo {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}} per aprire la schermata di creazione del servizio. </li>
+<li>Fai clic sulla voce di catalogo {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}} per aprire la schermata di creazione del servizio.</li>
 <li>Immetti i valori richiesti.
   <dl>
     <dt>Nome del servizio:</dt>
@@ -49,7 +49,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
     <dd>
     <p>Una password per l'ID utente DBA. Devi creare una password sicura con i seguenti attributi:
       <ul>
-        <li>una lunghezza di minimo **15 caratteri** </li>
+        <li>una lunghezza di minimo **15 caratteri**</li>
         <li>almeno **un carattere maiuscolo**</li>
         <li>almeno **un carattere minuscolo**</li>
         <li>almeno **un numero**</li>
@@ -85,7 +85,7 @@ Per rafforzare ulteriormente la sicurezza, ti consigliamo di aggiornare la **pas
 Apri il dashboard {{site.data.keyword.cloud_notm}} per visualizzare un elenco di istanze del servizio create:
 
 <ol>
-	<li>Fai clic sul pulsante delle tre barre nella parte in alto a sinistra della console. </li>
+	<li>Fai clic sul pulsante delle tre barre nella parte in alto a sinistra della console.</li>
 	<li>Seleziona Dashboard.</li>
 	<li>Seleziona Services.</li>
 </ol>
@@ -100,7 +100,7 @@ Apri il dashboard {{site.data.keyword.cloud_notm}} per visualizzare un elenco di
 ## Eliminazione di un'istanza del servizio
 {: #dbaas_webui_delete_service}
 
-1. Visualizza l'elenco di risorse {{site.data.keyword.cloud_notm}} facendo clic su **Navigation Menu > Resource List**. 
+1. Visualizza l'elenco di risorse {{site.data.keyword.cloud_notm}} facendo clic su **Navigation Menu > Resource List**.
 2. Apri il twister **Service** per visualizzare le tue istanze del servizio.
 3. Seleziona l'istanza del servizio che vuoi eliminare.
 4. Fai clic sui tre punti sulla destra.

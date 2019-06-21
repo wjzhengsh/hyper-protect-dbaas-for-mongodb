@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-06-19"
 
 keywords: Activity tracker events
 
@@ -25,7 +25,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 使用 {{site.data.keyword.cloudaccesstrailfull}} 服务可跟踪用户和应用程序如何与 {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} 进行交互。
 {: shortdesc}
 
-{{site.data.keyword.cloudaccesstrailfull_notm}} 服务会记录由用户发起的可更改 {{site.data.keyword.cloud_notm}} 中服务状态的活动。有关更多信息，请参阅 [{{site.data.keyword.cloudaccesstrailshort}} 文档](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started)。
+{{site.data.keyword.cloudaccesstrailfull_notm}} 服务会记录由用户发起的可更改 {{site.data.keyword.cloud_notm}} 中服务状态的活动。有关如何供应 {{site.data.keyword.cloudaccesstrailshort}} 服务的更多信息，请参阅 [{{site.data.keyword.cloudaccesstrailshort}} 文档](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started)。目前在达拉斯数据中心已提供 {{site.data.keyword.ihsdbaas_mongodb_full}} 服务，请确保选择**美国南部**作为捕获日志的区域。
 
 ## 事件列表
 {: #list-activity-tracker-events}

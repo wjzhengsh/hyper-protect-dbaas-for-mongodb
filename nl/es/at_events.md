@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-06-19"
 
 keywords: Activity tracker events
 
@@ -22,11 +22,10 @@ subcollection: hyper-protect-dbaas-for-mongodb
 # Sucesos de {{site.data.keyword.cloudaccesstrailshort}}
 {: #activity-tracker-events}
 
-Utilice el servicio de {{site.data.keyword.cloudaccesstrailfull}} para realizar el seguimiento sobre cómo interactúan los usuarios y las aplicaciones con {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}.
+Utilice el servicio {{site.data.keyword.cloudaccesstrailfull}} para realizar el seguimiento sobre cómo interactúan los usuarios y las aplicaciones con {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}.
 {: shortdesc}
 
-El servicio de {{site.data.keyword.cloudaccesstrailfull_notm}} registra actividades iniciadas por los usuarios que cambian el estado de un servicio en {{site.data.keyword.cloud_notm}}. Para
-obtener más información, consulte la [documentación de {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started).
+El servicio {{site.data.keyword.cloudaccesstrailfull_notm}} registra actividades iniciadas por los usuarios que cambian el estado de un servicio en {{site.data.keyword.cloud_notm}}. Para obtener información sobre cómo suministrar el servicio {{site.data.keyword.cloudaccesstrailshort}}, consulte la [documentación de {{site.data.keyword.cloudaccesstrailshort}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started). Ya que el servicio {{site.data.keyword.ihsdbaas_mongodb_full}} actualmente está disponible en el centro de datos de Dallas, asegúrese de seleccionar **us-south** como la región para capturar registros.
 
 ## Lista de sucesos
 {: #list-activity-tracker-events}

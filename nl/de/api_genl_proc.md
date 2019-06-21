@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-21"
 
 keywords: DBaaS Manager APIs, DBaaS Manager, API request
 
@@ -52,11 +52,11 @@ Ausführlichere Informationen (Methoden und Parameter) finden Sie in der [Dokume
 
 Um eine Serviceinstanz zu erstellen, geben Sie einen direkten API-Aufruf aus, z. B.:
 
-```javascript
+```
 curl -X POST \
 "https://<ip>:<port>/api/v1/services" \
--d '{"name": "Service_Name", "resource_group": "default", "plan": "mongodb-free", "admin_name": "admin", "password": "passw0rd_for_adm"}'
--H "x-auth-token: {access_token}" \
+-d '{"catalog": "hyperp-dbaas-mongodb", "name": "Service_Name", "resource_group": "default", "plan": "mongodb-small", "admin_name": "admin", "password": "passWORD4User19"}'
+-H "x-auth-token: <access_token>" \
 -H "accept: application/json" \
 -H "accept-license-agreement: yes"
 ```
@@ -64,7 +64,7 @@ curl -X POST \
 
 Dabei gilt Folgendes:
 <dl>
-<dt> &lt;<em>accessToken</em>&gt; </dt>
+<dt> &lt;<em>access_token</em>&gt; </dt>
 <dd>Ist das zuvor abgerufene Zugriffstoken; siehe [Authentifizierung für die Verwendung von DBaaS-Manager-APIs einrichten](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-api-auth). (**Hinweis:** Wenn das Zugriffstoken abgelaufen ist, kehren Sie zu diesen Anweisungen zurück und fordern Sie ein neues Token an.) </dd>
 <dt> &lt;<em>ip</em>&gt; </dt>
 <dd>Ist der Hostname eines DBaaS-Managers. Gültige Hostnamen sind in der obigen Tabelle aufgeführt.

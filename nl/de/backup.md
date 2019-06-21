@@ -22,7 +22,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 Der {{site.data.keyword.cloud}}{{site.data.keyword.ihsdbaas_mongodb_full}}-Service löst einmal alle 24 Stunden automatisch eine Sicherung Ihrer gesamten Datenbank aus. Diese verschlüsselten Sicherungen stehen für die letzten 7 Tage zur Verfügung und sind in allen Verfügbarkeitszonen der unterstützten Region redundant verfügbar.
 {: shortdesc}
 
-Wenn Sie die Disaster-Recovery-Funktionen erweitern und die Daten außerhalb der unterstützten Region sichern möchten, können Sie den [{{site.data.keyword.cos_full_notm}}-Service](https://cloud.ibm.com/catalog/services/cloud-object-storage){: external} verwenden, um Daten in einer anderen Region zu speichern, indem Sie die nachfolgend beschriebenen Schritte ausführen. 
+Wenn Sie die Disaster-Recovery-Funktionen erweitern und die Daten außerhalb der unterstützten Region sichern möchten, können Sie den [{{site.data.keyword.cos_full_notm}}-Service](https://cloud.ibm.com/catalog/services/cloud-object-storage){: external} verwenden, um Daten in einer anderen Region zu speichern, indem Sie die nachfolgend beschriebenen Schritte ausführen.
 
 ## Vorbereitende Schritte
 {: #backup_mongodb_before_begin}
@@ -67,7 +67,7 @@ Sie müssen die Instanz in einer Region erstellen, bei der es sich nicht um die 
 2. [Erstellen Sie ein Bucket](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-region) in einer anderen Region.
 3. [Erstellen Sie einen Serviceberechtigungsnachweis](/docs/services/cloud-object-storage?topic=cloud-object-storage-service-credentials) und speichern Sie die Werte für `access_key_id` und `secret_access_key` zur späteren Verwendung.
 4. Installieren Sie einen S3-Client.
-5. Verwenden Sie den S3-Client und die Zugriffsschlüssel, um eine Verbindung zum {{site.data.keyword.cos_short}}-Endpunkt in der Cloud für das Bucket herzustellen, das Sie zuvor erstellt haben. 
+5. Verwenden Sie den S3-Client und die Zugriffsschlüssel, um eine Verbindung zum {{site.data.keyword.cos_short}}-Endpunkt in der Cloud für das Bucket herzustellen, das Sie zuvor erstellt haben.
 6. Verwenden Sie den S3-Client, um die [{{site.data.keyword.mongodb}}-Sicherungsdatei](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload), die Sie in [Schritt 1](#step1_create_dump_file_backup_mongodb) erstellt haben, in das Bucket hochzuladen.
 
 In der [Dokumentation zu {{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started) finden Sie weitere Informationen.

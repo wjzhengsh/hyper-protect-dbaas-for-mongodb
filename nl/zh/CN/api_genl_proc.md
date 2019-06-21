@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-06-21"
 
 keywords: DBaaS Manager APIs, DBaaS Manager, API request
 
@@ -52,11 +52,11 @@ subcollection: hyper-protect-dbaas-for-mongodb
 
 要创建服务实例，请发出直接 API 调用，例如：
 
-```javascript
+```
 curl -X POST \
 "https://<ip>:<port>/api/v1/services" \
--d '{"name": "Service_Name", "resource_group": "default", "plan": "mongodb-free", "admin_name": "admin", "password": "passw0rd_for_adm"}'
--H "x-auth-token: {access_token}" \
+-d '{"catalog": "hyperp-dbaas-mongodb", "name": "Service_Name", "resource_group": "default", "plan": "mongodb-small", "admin_name": "admin", "password": "passWORD4User19"}'
+-H "x-auth-token: <access_token>" \
 -H "accept: application/json" \
 -H "accept-license-agreement: yes"
 ```
@@ -64,7 +64,7 @@ curl -X POST \
 
 其中：
 <dl>
-<dt> &lt;<em>accessToken</em>&gt;</dt>
+<dt> &lt;<em>access_token</em>&gt;</dt>
 <dd>是先前获取的访问令牌；请参阅[设置认证以使用 DBaaS 管理器 API](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-api-auth)。（**注：**如果访问令牌已到期，请返回到这些指示信息并请求新令牌。）</dd>
 <dt> &lt;<em>ip</em>&gt;</dt>
 <dd>是 DBaaS 管理器的主机名。上表中列出了有效的主机名。</dd>

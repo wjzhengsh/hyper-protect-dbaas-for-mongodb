@@ -33,7 +33,7 @@ ibmcloud resource service-instance-create MyDBaaSIns03 hyperp-dbaas-mongodb mong
 | ---------------- |  -------------------------------------------------------------- |
 | *MyDBaaSIns03*   |  サービス・インスタンスの名前 (任意の名前に置き換えてください)。 |
 | *hyperp-dbaas-mongodb* | {{site.data.keyword.ihsdbaas_mongodb_full}} のカタログ名。 |
-| *mongodb-small*  | プランの名前。 使用可能なプランは、**mongodb-small**、**mongodb-medium**、および **mongodb-large** です。(**注:** プランの名前には大/小文字の区別があります)。 |
+| *mongodb-small*  | プランの名前。 使用可能なプランは、**mongodb-small**、**mongodb-medium**、および **mongodb-large** です。  (**注:** プランの名前には大/小文字の区別があります)。 |
 | *us-south*            | 新しいデータベースを作成するロケーション (**注:** 現在は **us-south** だけが {{site.data.keyword.ihsdbaas_mongodb_full}} をサポートしています)。 |
 | *-p*               | 有効な JSON ストリング。以下の表のパラメーターを指定する必要があります。 |
 
