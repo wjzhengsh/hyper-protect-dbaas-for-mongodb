@@ -24,7 +24,7 @@ O serviço {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full
 
 Se você deseja aumentar seus recursos de recuperação de desastre e fazer backup dos dados fora da região suportada, é possível usar o [serviço {{site.data.keyword.cos_full_notm}}](https://cloud.ibm.com/catalog/services/cloud-object-storage){: external} para armazenar seus dados em uma região diferente consultando as etapas a seguir.
 
-## Antes de começar
+## Antes de Começar
 {: #backup_mongodb_before_begin}
 
 Para usar os comandos do {{site.data.keyword.mongodb}} para concluir o backup, é necessário fazer download e instalar o {{site.data.keyword.mongodb}} em sua máquina primeiro. Para obter mais informações, consulte o [website {{site.data.keyword.mongodb}}](https://docs.mongodb.com/manual/installation/){: external}.

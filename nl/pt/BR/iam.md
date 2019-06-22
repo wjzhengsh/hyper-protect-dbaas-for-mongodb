@@ -43,5 +43,4 @@ A tabela a seguir detalha as ações que são mapeadas para funções de gerenci
 |Administrador           |Executar todas as ações da plataforma com base no recurso para o qual essa função está sendo designada, incluindo a designação de políticas de acesso a outros usuários|<ul><li>Remover um cluster</li><li>Criar um cluster</li><li>Atualizar políticas de acesso de usuário</li><li>Todas as ações que um visualizador, um editor e um operador podem executar</li></ul>|
 {: caption="Tabela 1. Funções e ações do usuário do IAM"}
 
-
 Para obter informações sobre como designar funções de usuário na IU, consulte [Gerenciando acesso aos recursos](/docs/iam?topic=iam-iammanidaccser#iammanidaccser).
