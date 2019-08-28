@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-08-28"
 
 keywords: database, DBaaS dashboard
 
@@ -10,16 +10,21 @@ subcollection: hyper-protect-dbaas-for-mongodb
 
 ---
 
-{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:important: .important}
 {:screen: .screen}
 {:codeblock: .codeblock}
+{:tip: .tip}
+{:pre: .pre}
+{:note: .note}
+{:external: target="_blank" .external}
 
-
-#Databases
+# Creating and deleting databases
 {: #dbaas-webui-databases}
 
 A service instance can host several databases.
+{:shortdesc: .shortdesc}
 
 ## Before you begin
 {: #webui-databases-byb}
@@ -37,4 +42,4 @@ In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}} d
 {: #webui-delete-database}
 
 1. Select the database.
-2. Click the three dots at the right end of the line, then select **Delete**.
+2. Click **Delete**.

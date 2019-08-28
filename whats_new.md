@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-13"
+lastupdated: "2019-08-28"
 
 keywords: release note, new
 
@@ -19,6 +19,15 @@ subcollection: hyper-protect-dbaas-for-mongodb
 
 Stay up-to-date with the new features that are available for {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}}.
 {: shortdesc}
+
+## August 2019
+{: #Aug-2019}
+
+### Added: {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} expands into Frankfurt region
+{: #frankfurt-region}
+New as of: 2019-08-28
+
+You can now create {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} resources in the Frankfurt region.
 
 ## June 2019
 {: #June-2019}

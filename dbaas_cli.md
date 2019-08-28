@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-10"
+lastupdated: "2019-08-28"
 
 keywords: instance commands, cluster resource, CLI plugin
 
@@ -20,13 +20,13 @@ subcollection: hyper-protect-dbaas-for-mongodb
 {:important: .important}
 
 
-# {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} CLI plugin
+# {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} CLI plug-in
 {: #dbaas_cli_plugin}
 
 - Install the [{{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-getting-started). {{site.data.keyword.cloud_notm}} CLI requires Java SDK 1.7.0. The prefix for running commands by using the {{site.data.keyword.cloud_notm}} CLI is `ibmcloud`. In the terminal, you are notified when updates to the `ibmcloud` CLI and plug-ins are available. Be sure to keep your CLI up-to-date so that you can use all the available commands and flags.
 
 - Install the {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} CLI plug-in. You can see [Installing the DBaaS CLI plug-in](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-install-dbaas-cli-plugin) for reference. If you want to view the current version of your {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}
-CLI plugin, run `ibmcloud plugin show dbaas-cli`.
+CLI plug-in, run `ibmcloud plugin show dbaas-cli`.
 
 ## CLI plug-in usage command
 {: #plugin_use}
@@ -145,7 +145,7 @@ ibmcloud dbaas user-create <resource_name> <auth_db.username> <password> [<db_na
 <dt>*auth_db.username*</dt>
 <dd>The authentication database name and user name, separated by a period, to be assigned to the database user being created.</dd>
 <dt>*db_name*</dt>
-<dd>(Optional)This specifies a database for which the user will have read and write access.</dd>
+<dd>(Optional) This specifies a database for which the user will have read and write access.</dd>
 </dl>
 
 

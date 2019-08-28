@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-12"
+lastupdated: "2019-08-28"
 
 keywords: backup, disaster recovery, restore
 
@@ -91,7 +91,7 @@ The following table illustrates the variables used in the command.
 |*replica_set_name*|The target {{site.data.keyword.mongodb}} replica set name. This is the cluster name you set when you create the instance. You can find the cluster URI on the overview page. The name is the value after `replicaSet=`.|MongoDB-002|
 |*host_name1, host_name2, host_name3*|The DBaaS manager server that hosts the target replica set. Three replicas are available. You can find the hostnames in the cluster URI on the overview page.|dbaas29.hyperprotectdbaas.cloud.ibm.com, dbaas31.hyperprotectdbaas.cloud.ibm.com, dbaas30.hyperprotectdbaas.cloud.ibm.com|
 |*port1, port2, port3*|The ports to connect the corresponding host. You can find the ports in the cluster URI on the overview page.|28128, 28248, 28043|
-|*user_name*|The username to authenticate to the target database. The user does not have to be the same with the user that creates the dump file.|new_user|
+|*user_name*|The username to authenticate to the target database. The user does not have to be the same as the user that creates the dump file.|new_user|
 |*authentication_database_name*|The authentication database for the specified user. If you do not specify an authentication database, `mongodump` assumes it to be the database that you set in `--db` option. If the `--db` option is also not specified, `mongodump` assumes it to be the admin database.|admin|
 |*database_name*|The target database that you want to restore the data into. If the database does not exist, `mongorestore` creates it automatically. If you do not specify the database, `mongorestore` creates a database based on the original database.|my_database|
 |*cert_file*|The `.pem` file for Certificate Authority. You can download the file from the instance overview page and specify it using relative or absolute paths.|./cert.pem|

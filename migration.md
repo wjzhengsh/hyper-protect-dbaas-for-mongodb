@@ -2,9 +2,9 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-12"
+lastupdated: "2019-08-28"
 
-keywords: migrate, beta, restore
+keywords: migrate, restore
 
 subcollection: hyper-protect-dbaas-for-mongodb
 
@@ -35,7 +35,7 @@ To use the {{site.data.keyword.mongodb}} commands to complete the migration, you
 Use the following `mongodump` command to create a dump file that contains the databases you want to restore.
 
 ```
-mongodump --host "<replica_set_name>/<hostname1>:<port1>,<hostname2>:<port2>,<hostname3>:<port3>" --ssl --username <user_name> --authenticationDatabase <authentication_database_name> --db <database_name> --sslCAFile <cert_file> --out <dump_file>
+mongodump --host "<replica_set_name>/<hostname1>:<port1>,<hostname2>:<port2>,<hostname3>:<port3>" --ssl --username <user_name> --authenticationDatabase <authentication_database_name> --db <database_name> --sslCAFile <cert_file> --out <dump_path>
 ```
 {: pre}
 
@@ -49,8 +49,8 @@ The following table illustrates the variables used in the command.
 |*user_name*|The username to authenticate to the original databases. The user needs to have READ privilege on the database you want to migrate.|my_user|
 |*authentication_database_name*|The authentication database for the specified user. If you do not specify an authentication database, `mongodump` assumes it to be the database that you set in `--db` option. If the `--db` option is also not specified, `mongodump` assumes it to be the admin database.|admin|
 |*database_name*|The database you want to migrate. If you do not specify the database, `mongodump` dumps all the databases that belong to the user.|my_database|
-|*cert_file*|The `.pem` file for Certificate Authority. If the cluster is deployed in a {{site.data.keyword.ihsdbaas_full}} Beta instance, you can download the cert file from the overview page. You can specify the file using relative or absolute paths.|./cert.pem|
-|*dump_file*|The `.dump` file to store the original data. You can use relative or absolute paths to specify the file.|./mongo.dump|
+|*cert_file*|The certificate authority (CA) file in the `.pem` format that contains SSL CA certificates. You can specify the file using relative or absolute paths. If the cluster is deployed in a Hyper Protect DBaaS Beta instance, you can select **Manage** on the left navigation bar of the instance dashboard, and download the CA file in the **Connect to Database** pane on the right side of the **Overview** tab page.|./cert.pem|
+|*dump_path*|The path specifies the directory where `mongodump` will write a [BSON](https://docs.mongodb.com/manual/reference/program/mongodump/index.html#cmdoption-mongodump-out){: external} file for the dumped database. You will find the BSON file in a subdirectory with the name of *database_name*. You can use relative or absolute paths.|my_dump_path|
 {: caption="Table 1. The variables that are needed to create a dump file"}
 
 If you need more detailed information about `mongodump` utility, you can refer to [{{site.data.keyword.mongodb}} documentation](https://docs.mongodb.com/manual/reference/program/mongodump/){: external}.
@@ -63,8 +63,8 @@ You can get most of the information from the cluster URI. The format of the URI 
 
 Before you restore the data, you need to create a new service instance in {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} as the target database cluster. You can use one of the following ways to create a new instance:
 - [The web user interface](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-dbaas_webui_service#dbaas_webui_create_service)
-- [The DBaaS Manger APIs](https://{DomainName}/apidocs/hyperp-dbaas#create-an-ibm-cloud-service-instance-of-hyperprote){: external}
-- [The CLI plugin with the {{site.data.keyword.cloud_notm}} CLI](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-dbaas_cli_create_service)
+- [The {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas#create-an-ibm-cloud-service-instance-of-hyperprote){: external}
+- [The CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-dbaas_cli_create_service)
 
 When you create the new service instance, you need to set the cluster name, the administrator name and password. They are not necessarily to be the same as the ones in the original instance. It doesn't affect the migration. After the migration is completed, the databases are assigned to the new administrator/authentication database.
 
@@ -74,7 +74,7 @@ When you create the new service instance, you need to set the cluster name, the 
 Use the `mongorestore` command to restore the data from the dump file that is created in [Step1](#step1_create_dump_file).
 
 ```
-mongorestore --host "<replica_set_name>/<hostname1>:<port1>,<hostname2>:<port2>,<hostname3>:<port3>" --ssl --username <user_name> --authenticationDatabase <authentication_database_name> --db <database_name> --sslCAFile <cert_file> <dump_file>
+mongorestore --host "<replica_set_name>/<hostname1>:<port1>,<hostname2>:<port2>,<hostname3>:<port3>" --ssl --username <user_name> --authenticationDatabase <authentication_database_name> --db <database_name> --sslCAFile <cert_file> <dump_file_path>
 ```
 {: pre}
 
@@ -88,11 +88,11 @@ The following table illustrates the variables used in the command.
 |*user_name*|The username to authenticate to the target database. The user does not have to be the same with the user that creates the dump file.|new_user|
 |*authentication_database_name*|The authentication database for the specified user. If you do not specify an authentication database, `mongodump` assumes it to be the database that you set in `--db` option. If the `--db` option is also not specified, `mongodump` assumes it to be the admin database.|admin|
 |*database_name*|The target database that you want to migrate the data into. If the database does not exist, `mongorestore` creates it automatically. If you do not specify the database, `mongorestore` creates a database based on the original database.|my_database|
-|*cert_file*|The `.pem` file for Certificate Authority. You can download the file from the instance overview page and specify it using relative or absolute paths.|./cert.pem|
-|*dump_file*|The `.dump` file that you create in [Step1](#step1_create_dump_file). You can use relative or absolute paths to specify the file.|./mongo.dump|
+|*cert_file*|The CA file in the `.pem` format that contains SSL CA certificates. You can specify the file using relative or absolute paths. If the cluster is deployed in a Hyper Protect DBaaS Beta instance, you can select **Manage** on the left navigation bar of the instance dashboard, and download the CA file in the **Connect to Database** pane on the right side of the **Overview** tab page.|./cert.pem|
+|*dump_file_path*|The path of the folder containing dump files you created in [Step1](#step1_create_dump_file), that is, *dump_path/database_name*. You can use relative or absolute paths.|my_dump_path/my_database|
 {: caption="Table 2. The variables that are needed to restore the data from a dump file"}
 
-You can use the following ways to create new users: [The web user interface](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-dbaas-webui-database-users#webui-create-database-user), [The DBaaS Manger APIs](https://{DomainName}/apidocs/hyperp-dbaas#create-a-user-in-a-database-cluster){: external},[The CLI plugin with the {{site.data.keyword.cloud_notm}} CLI](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-dbaas_cli_plugin#user_create), and [{{site.data.keyword.mongodb}} command](https://docs.mongodb.com/manual/reference/method/db.createUser/index.html){: external}.
+You can use the following ways to create new users: [The web user interface](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-dbaas-webui-database-users#webui-create-database-user), [The {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas#create-a-user-in-a-database-cluster){: external}, [The CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-dbaas_cli_plugin#user_create), and [{{site.data.keyword.mongodb}} command](https://docs.mongodb.com/manual/reference/method/db.createUser/index.html){: external}.
 {: tip}
 
 For {{site.data.keyword.mongodb}}, the migration merges the original data into the target cluster rather than overwriting the existing data if any. You can refer to the [detailed explanation](https://docs.mongodb.com/manual/reference/program/mongorestore/#insert-only){: external} of this feature in the {{site.data.keyword.mongodb}} website. You can also see [{{site.data.keyword.mongodb}} documentation](https://docs.mongodb.com/manual/reference/program/mongorestore/){: external} for more information about the `mongorestore` utility.
@@ -100,4 +100,4 @@ For {{site.data.keyword.mongodb}}, the migration merges the original data into t
 ## What's next
 {: #whats_next_migration_mongodb}
 
-After the migration, you can connect to the new database cluster to check if the data is migrated successfully.
+After the migration, you can connect to the new database cluster to check whether the data is migrated successfully.
