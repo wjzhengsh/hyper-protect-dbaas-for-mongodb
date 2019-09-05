@@ -63,8 +63,7 @@ For more information about using Grafana, see [{{site.data.keyword.cloud_notm}} 
 
 The table describes all the available metrics for {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} deployments.
 
-Metric | Description
-----------|-----------
-`memory-percent-used` | How much percent of memory that your deployment is using for the instance.
-
-{: caption="Table 1.{{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} metrics " caption-side="top"}
+| Metric | Description|
+|----------|-----------|
+| `memory-percent-used` | How much percent of memory that your deployment is using for the instance. |
+{: caption="Table 1. {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} metrics" caption-side="top"}
