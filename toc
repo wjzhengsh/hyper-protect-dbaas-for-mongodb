@@ -20,6 +20,7 @@ IBM Cloud Hyper Protect DBaaS for MongoDB
         webui-db.md
         webui-dbmonitoring.md
         webui-dbuser.md
+        logging.md
 
     {: .topicgroup}
     Using the IBM Cloud Hyper Protect DBaaS RESTful APIs
