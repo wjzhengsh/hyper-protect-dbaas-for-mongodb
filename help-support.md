@@ -24,7 +24,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 If you have problems or questions when you are using {{site.data.keyword.ihsdbaas_mongodb_full}}, consider the following ways to get help and support.
 {: shortdesc}
 
-* Go to [{{site.data.keyword.cloud}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to check the status of [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/status?selected=status), review common FAQs, search community content, or open support cases.
+* Go to [{{site.data.keyword.cloud}} Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} to check the status of [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/status?selected=status){: external}, review common FAQs, search community content, or open support cases.
 
 * Get in contact with the team through one of the following options:
   * Submit a question through either of the forums (specifying **{{site.data.keyword.ihsdbaas_mongodb_full}}** in your entry):
