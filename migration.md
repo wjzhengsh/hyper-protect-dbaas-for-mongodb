@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-10-18"
 
 keywords: migrate, restore
 
@@ -27,9 +27,9 @@ If you are using {{site.data.keyword.mongodb}} databases and want to migrate to 
 ## Before you begin
 {: #migration_mongodb_before_begin}
 
-To use the {{site.data.keyword.mongodb}} commands to complete the migration, you need to download and install {{site.data.keyword.mongodb}} on your machine first. For more information, see [{{site.data.keyword.mongodb}} website](https://docs.mongodb.com/manual/installation/){: external}.
+To use the {{site.data.keyword.mongodb}} commands to complete the migration, you need to download and install {{site.data.keyword.mongodb}} of the version compatible with {{site.data.keyword.mongodb}} EE 3.6.4 that is supported by {{site.data.keyword.ihsdbaas_mongodb_full}}. For more information, see [{{site.data.keyword.mongodb}} website](https://docs.mongodb.com/manual/installation/){: external}.
 
-## Step1: Create a dump file for restoring the original databases
+## Step 1: Create a dump file for restoring the original databases
 {: #step1_create_dump_file}
 
 Use the following `mongodump` command to create a dump file that contains the databases you want to restore.
@@ -58,7 +58,7 @@ If you need more detailed information about `mongodump` utility, you can refer t
 You can get most of the information from the cluster URI. The format of the URI is `mongodb://<host_name1>:<port1>,<host_name2>:<port2>,<host_name3>:<port3>/admin?replicaSet=<replica_set_name>`. You can match the value to the corresponding field in the previous `mongodump` command.
 {: tip}
 
-## Step2: Create a new service instance in {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}
+## Step 2: Create a new service instance in {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}
 {: #step2_creat_new_service_instance}
 
 Before you restore the data, you need to create a new service instance in {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}} as the target database cluster. You can use one of the following ways to create a new instance:
@@ -68,10 +68,10 @@ Before you restore the data, you need to create a new service instance in {{site
 
 When you create the new service instance, you need to set the cluster name, the administrator name and password. They are not necessarily to be the same as the ones in the original instance. It doesn't affect the migration. After the migration is completed, the databases are assigned to the new administrator/authentication database.
 
-## Step3: Restore the data from the dump file to the new service instance
+## Step 3: Restore the data from the dump file to the new service instance
 {: #step3_restore_data}
 
-Use the `mongorestore` command to restore the data from the dump file that is created in [Step1](#step1_create_dump_file).
+Use the `mongorestore` command to restore the data from the dump file that is created in [Step 1](#step1_create_dump_file).
 
 ```
 mongorestore --host "<replica_set_name>/<hostname1>:<port1>,<hostname2>:<port2>,<hostname3>:<port3>" --ssl --username <user_name> --authenticationDatabase <authentication_database_name> --db <database_name> --sslCAFile <cert_file> <dump_file_path>
@@ -89,7 +89,7 @@ The following table illustrates the variables used in the command.
 |*authentication_database_name*|The authentication database for the specified user. If you do not specify an authentication database, `mongodump` assumes it to be the database that you set in `--db` option. If the `--db` option is also not specified, `mongodump` assumes it to be the admin database.|admin|
 |*database_name*|The target database that you want to migrate the data into. If the database does not exist, `mongorestore` creates it automatically. If you do not specify the database, `mongorestore` creates a database based on the original database.|my_database|
 |*cert_file*|The CA file in the `.pem` format that contains SSL CA certificates. You can specify the file using relative or absolute paths. If the cluster is deployed in a Hyper Protect DBaaS Beta instance, you can select **Manage** on the left navigation bar of the instance dashboard, and download the CA file in the **Connect to Database** pane on the right side of the **Overview** tab page.|./cert.pem|
-|*dump_file_path*|The path of the folder containing dump files you created in [Step1](#step1_create_dump_file), that is, *dump_path/database_name*. You can use relative or absolute paths.|my_dump_path/my_database|
+|*dump_file_path*|The path of the folder containing dump files you created in [Step 1](#step1_create_dump_file), that is, *dump_path/database_name*. You can use relative or absolute paths.|my_dump_path/my_database|
 {: caption="Table 2. The variables that are needed to restore the data from a dump file"}
 
 You can use the following ways to create new users: [The web user interface](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-dbaas-webui-database-users#webui-create-database-user), [The {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_full}} RESTful APIs](https://{DomainName}/apidocs/hyperp-dbaas#create-a-user-in-a-database-cluster){: external}, [The CLI plug-in with the {{site.data.keyword.cloud_notm}} CLI](/docs/services/hyper-protect-dbaas-for-mongodb?topic=hyper-protect-dbaas-for-mongodb-dbaas_cli_plugin#user_create), and [{{site.data.keyword.mongodb}} command](https://docs.mongodb.com/manual/reference/method/db.createUser/index.html){: external}.
