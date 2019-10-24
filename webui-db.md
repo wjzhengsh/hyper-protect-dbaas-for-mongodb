@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-10-14"
 
 keywords: database, DBaaS dashboard
 
@@ -35,7 +35,8 @@ In the {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}} d
 {: #webui-create-database}
 
 1. Click **Create**.
-2. Enter a database name and a collection name.
+2. Enter a database name and a collection name. For more information about collection, see [collection](https://docs.mongodb.com/manual/reference/glossary/#term-collection){: external} in MongoDB glossary.
+
 3. Click **Create**.
 
 ## Deleting a database

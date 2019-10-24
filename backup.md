@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-28"
+lastupdated: "2019-10-18"
 
 keywords: backup, disaster recovery, restore
 
@@ -10,26 +10,30 @@ subcollection: hyper-protect-dbaas-for-mongodb
 
 ---
 
-{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
-{:pre: .pre}
+{:codeblock: .codeblock}
+{:important: .important}
+{:screen: .screen}
+{:codeblock: .codeblock}
 {:tip: .tip}
-
+{:pre: .pre}
+{:note: .note}
+{:external: target="_blank" .external}
 
 # Backing up and restoring your databases using {{site.data.keyword.cos_full_notm}}
 {: #backup_mongodb_databases}
 
-The {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}} service automatically triggers a backup of your complete database once every 24 hours. These encrypted backups are available for the last 7 days and redundantly available on local storage in all the Availability Zones of the supported region.
+The {{site.data.keyword.cloud}} {{site.data.keyword.ihsdbaas_mongodb_full}} service automatically triggers a backup of your complete database once every 24 hours. These encrypted backups are available for the last seven days and redundantly available on local storage in all availability zones of the supported regions.
 {: shortdesc}
 
-If you want to increase your disaster recovery capabilities and backup the data outside of the supported region, you can use [{{site.data.keyword.cos_full_notm}} service](https://cloud.ibm.com/catalog/services/cloud-object-storage){: external} to store your data in a different region by referring to the following steps.
+If you want to increase your disaster recovery capabilities by making cross-region backups, you can use [{{site.data.keyword.cos_full_notm}} service](https://cloud.ibm.com/catalog/services/cloud-object-storage){: external} to store your data in a different region by referring to the following steps.
 
 ## Before you begin
 {: #backup_mongodb_before_begin}
 
-To use the {{site.data.keyword.mongodb}} commands to complete the backup, you need to download and install {{site.data.keyword.mongodb}} on your machine first. For more information, see [{{site.data.keyword.mongodb}} website](https://docs.mongodb.com/manual/installation/){: external}.
+To use the {{site.data.keyword.mongodb}} commands to complete the backup, you need to download and install {{site.data.keyword.mongodb}} of the version compatible with {{site.data.keyword.mongodb}} EE 3.6.4 that is supported by {{site.data.keyword.ihsdbaas_mongodb_full}}. For more information, see [{{site.data.keyword.mongodb}} website](https://docs.mongodb.com/manual/installation/){: external}.
 
-## Step1: Create a dump file for backing up the original databases
+## Step 1: Create a dump file for backing up the original databases
 {: #step1_create_dump_file_backup_mongodb}
 
 Use the following `mongodump` command to create a dump file that contains the databases you want to back up.
@@ -58,7 +62,7 @@ If you need more detailed information about `mongodump` utility, you can refer t
 You can get most of the information from the cluster URI. The format of the URI is `mongodb://<host_name1>:<port1>,<host_name2>:<port2>,<host_name3>:<port3>/admin?replicaSet=<replica_set_name>`. You can match the value to the corresponding field in the previous `mongodump` command.
 {: tip}
 
-## Step2: Create a new {{site.data.keyword.cos_full_notm}} instance
+## Step 2: Create a new {{site.data.keyword.cos_full_notm}} instance
 {: #step2_create_object_storage_backup_mongodb}
 
 You need to create the instance in a region that is different from where the {{site.data.keyword.ihsdbaas_mongodb_full}} service instance is currently hosted. You can refer to the following steps:
@@ -67,14 +71,14 @@ You need to create the instance in a region that is different from where the {{s
 2. [Create a bucket](/docs/services/cloud-object-storage?topic=cloud-object-storage-endpoints#endpoints-region) in a different region.
 3. [Create a service credential](/docs/services/cloud-object-storage?topic=cloud-object-storage-service-credentials) and save the `access_key_id` and `secret_access_key` for later use.
 4. Install a S3 client.
-5. Use the S3 client and the access keys to connect to the Cloud {{site.data.keyword.cos_short}} endpoint of the bucket that you create earlier.
-6. Use the S3 client to [upload the {{site.data.keyword.mongodb}} backup file](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload) that you create in [Step1](#step1_create_dump_file_backup_mongodb) to the bucket.
+5. Use the S3 client and the access keys to connect to the Cloud {{site.data.keyword.cos_short}} endpoint of the bucket that you create earlier. For detailed instructions on configuring the `.s3cfg` file, see [Use IBM Cloud Object Storage to serve static website content](https://www.ibm.com/cloud/blog/static-websites-cloud-object-storage-cos){: external}.
+6. Use the S3 client to [upload the {{site.data.keyword.mongodb}} backup file](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload) that you create in [Step 1](#step1_create_dump_file_backup_mongodb) to the bucket.
 
 You can refer to [{{site.data.keyword.cos_full_notm}} documentation](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started) for more information.
 
-After completing this step, you successfully back up your data in a Cloud {{site.data.keyword.cos_short}} instance in a different region. If you want to restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_mongodb_full}} instance, read the following Step3 for details.
+After completing this step, you successfully back up your data in a Cloud {{site.data.keyword.cos_short}} instance in a different region. If you want to restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_mongodb_full}} instance, read the following Step 3 for details.
 
-## Step3: Restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_mongodb_full}} instance
+## Step 3: Restore the data from the Cloud {{site.data.keyword.cos_short}} instance to a {{site.data.keyword.ihsdbaas_mongodb_full}} instance
 {: #step3_restore_data_from_cos_mongodb}
 
 You need to download the backup file from the Cloud {{site.data.keyword.cos_short}} bucket to your local machine first, then use the `mongorestore` command to restore the data.
@@ -103,4 +107,4 @@ For {{site.data.keyword.mongodb}}, the migration merges the original data into t
 ## What's next
 {: #whats_next_backup_mongodb}
 
-After [Step3](#step3_restore_data_from_cos_mongodb), you can connect to the database cluster to check if the data is restored successfully.
+After [Step 3](#step3_restore_data_from_cos_mongodb), you can connect to the database cluster to check if the data is restored successfully.
