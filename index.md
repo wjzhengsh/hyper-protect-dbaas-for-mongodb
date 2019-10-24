@@ -28,7 +28,7 @@ subcollection: hyper-protect-dbaas-for-mongodb
 
 This {{site.data.keyword.cloud_notm}} offering provides {{site.data.keyword.mongodb}} database clusters. Each database cluster comprises one primary database instance and two secondary database instances (replicas that back up the primary).
 
-With {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}, you can create database clusters in the {{site.data.keyword.cloud_notm}}, manage database instances, create and delete databases, manage user access, monitor databases, and view service logs.
+With {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_mongodb_full}}, you can create database clusters in the {{site.data.keyword.cloud_notm}}, manage database instances, create and delete databases, manage database users, monitor databases, and view service logs.
 
 ## Supported version
 {: #mongodb_supported_version}
